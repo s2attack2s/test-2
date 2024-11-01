@@ -53,13 +53,12 @@
     border-radius: var(--corner-radius-s);
 }
 
-/* .cta-svg {
+.cta-svg {
     position: absolute;
     opacity: 0.5;
-    filter: blur(120px);
-} */
+}
 
-/* .cta-svg-1 {
+.cta-svg-1 {
     top: -210px;
     left: 131px;
 }
@@ -67,7 +66,7 @@
 .cta-svg-2 {
     top: -150px;
     right: 199px;
-} */
+}
 
 @media screen and (max-width: 1919px) {
     .cta-section__card--item:first-child {
