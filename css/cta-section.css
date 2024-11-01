@@ -7,6 +7,7 @@
     padding-top: 160px;
     padding-bottom: 160px;
     position: relative;
+    overflow: hidden;
 }
 
 .cta-section__title {
