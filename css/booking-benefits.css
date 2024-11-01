@@ -27,7 +27,7 @@
 
 .booking-benefits .niceshoots__content {
     border-radius: var(--corner-radius-3xs, 0px);
-    background: url('/images/booking-benefits-1.jpg');
+    background: url('./images/booking-benefits-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -90,7 +90,7 @@
         line-height: 24px;
     }
     .booking-benefits .niceshoots__content {
-        background: url('/images/booking-benefits-2.jpg') 50% / cover no-repeat;
+        background: url('./images/booking-benefits-2.jpg') 50% / cover no-repeat;
         margin-bottom: var(--spacing-m);
     }
 }

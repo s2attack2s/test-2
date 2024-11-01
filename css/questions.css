@@ -17,6 +17,7 @@
 }
 
 .collapse-item {
+    user-select: none;
     padding: var(--spacing-l) 0;
 }
 
