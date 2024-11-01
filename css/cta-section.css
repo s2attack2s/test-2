@@ -1,17 +1,30 @@
 .cta-section {
+    background: var(--bg-1);
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 160px;
+    padding-top: 160px;
+    padding-bottom: 160px;
     position: relative;
+}
+
+.cta-section__title {
+    text-align: center;
+    font-family: 'Nelphim';
+    font-size: 88px;
+    line-height: 104px;
 }
 
 .cta-section__description {
     font-size: 25px;
     list-style: 40px;
     z-index: 1;
-    margin-top: var(--spacing-s);
-    margin-bottom: var(--spacing-l);
+}
+
+.cta-section button {
+    margin-top: var(--spacing-l);
+    margin-bottom: 96px;
 }
 
 .cta-section__card {
@@ -36,4 +49,20 @@
     background: var(--white);
     box-shadow: 8px 24px 48px -12px rgba(0, 0, 0, 0.08);
     border-radius: var(--corner-radius-s);
+}
+
+.cta-svg {
+    position: absolute;
+    opacity: 0.5;
+    filter: blur(120px);
+}
+
+.cta-svg-1 {
+    top: -210px;
+    left: 131px;
+}
+
+.cta-svg-2 {
+    top: -150px;
+    right: 199px;
 }
