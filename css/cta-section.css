@@ -56,7 +56,6 @@
 .cta-svg {
     position: absolute;
     opacity: 0.5;
-    filter: blur(120px);
 }
 
 .cta-svg-1 {
