@@ -24,7 +24,7 @@
     z-index: 1;
 }
 
-.cta-section button {
+.cta-section a {
     margin-top: var(--spacing-l);
     margin-bottom: 96px;
 }
