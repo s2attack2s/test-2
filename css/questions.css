@@ -31,6 +31,10 @@
     grid-column: 5 / span 6;
 }
 
+.questions svg {
+    flex-shrink: 0;
+}
+
 .icon-plus {
     display: inline-block;
 }
@@ -74,7 +78,6 @@
     .questions .niceshoots__aside {
         grid-column: span 1;
         display: flex;
-        align-items: center;
     }
     .questions .niceshoots__content {
         grid-column: span 11;
