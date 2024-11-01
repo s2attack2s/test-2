@@ -1,0 +1,39 @@
+.cta-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 160px;
+    position: relative;
+}
+
+.cta-section__description {
+    font-size: 25px;
+    list-style: 40px;
+    z-index: 1;
+    margin-top: var(--spacing-s);
+    margin-bottom: var(--spacing-l);
+}
+
+.cta-section__card {
+    width: 100%;
+}
+
+.cta-section__card--item:first-child {
+    grid-column: 2 / span 5;
+}
+
+.cta-section__card--item:last-child {
+    grid-column: 7 / span 5;
+}
+
+.cta-section__card--booking,
+.cta-section__card--payment,
+.cta-section__card--management {
+    grid-column: span 6;
+}
+
+.cta-section__card--bg {
+    background: var(--white);
+    box-shadow: 8px 24px 48px -12px rgba(0, 0, 0, 0.08);
+    border-radius: var(--corner-radius-s);
+}
