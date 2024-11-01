@@ -84,6 +84,11 @@
         padding-bottom: 96px;
     }
 
+    .cta-section-header svg {
+        width: 32px;
+        height: 32px;
+    }
+
     .cta-section__title {
         font-size: 62px;
         line-height: 80px;
@@ -102,7 +107,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .cta-section__title {
         font-size: 49px;
         line-height: 64px;
@@ -118,6 +123,17 @@
     .cta-section {
         padding-top: 48px;
         padding-bottom: 48px;
+    }
+
+    .cta-section-header {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xs);
+    }
+
+    .cta-section-header svg {
+        width: 24px;
+        height: 24px;
     }
 
     .cta-section__title {
