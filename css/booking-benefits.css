@@ -1,0 +1,96 @@
+.benefits-small {
+    display: none;
+}
+
+.booking-benefits .niceshoots__aside {
+    background: var(--white);
+}
+
+.booking-benefits__item {
+    padding-top: var(--spacing-s);
+    border-top: 1px solid var(--border-3, #dbdbdb);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3xs);
+}
+
+.booking-benefits__number {
+    font-size: 39px;
+    line-height: 56px;
+}
+
+.booking-benefits__percent {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.booking-benefits .niceshoots__content {
+    border-radius: var(--corner-radius-3xs, 0px);
+    background: url('/images/booking-benefits-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.booking-benefits img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1439px) {
+    .booking-benefits .niceshoots__aside {
+        order: 1;
+    }
+
+    .booking-benefits img {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        object-fit: cover;
+        border-radius: var(--corner-radius-2xs);
+    }
+
+    .booking-benefits .niceshoots__content {
+        margin-bottom: var(--spacing-2xl);
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .booking-benefits .niceshoots__content {
+        margin-bottom: var(--spacing-l);
+    }
+    .booking-benefits__item {
+        border-top: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .benefits-large {
+        display: none;
+    }
+
+    .benefits-small {
+        display: block;
+    }
+    .booking-benefits {
+        padding: 0;
+        gap: 0;
+    }
+
+    .booking-benefits .niceshoots__aside {
+        padding: 0 var(--spacing-s);
+    }
+
+    .booking-benefits__number {
+        font-size: 31px;
+        line-height: 48px;
+    }
+
+    .booking-benefits__percent {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .booking-benefits .niceshoots__content {
+        background: url('/images/booking-benefits-2.jpg') 50% / cover no-repeat;
+        margin-bottom: var(--spacing-m);
+    }
+}

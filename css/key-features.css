@@ -1,0 +1,17 @@
+.key-features {
+  padding-top: 240px;
+  padding-bottom: var(--spacing-2xl);
+}
+
+@media screen and (max-width: 1799px) {
+  .key-features {
+    padding-top: 160px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .key-features {
+    padding-top: 112px;
+    padding-bottom: var(--spacing-xl);
+  }
+}
