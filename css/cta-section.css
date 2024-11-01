@@ -20,6 +20,7 @@
 .cta-section__description {
     font-size: 25px;
     list-style: 40px;
+    text-align: center;
     z-index: 1;
 }
 
@@ -66,4 +67,67 @@
 .cta-svg-2 {
     top: -150px;
     right: 199px;
+}
+
+@media screen and (max-width: 1919px) {
+    .cta-section__card--item:first-child {
+        grid-column: span 6;
+    }
+    .cta-section__card--item:last-child {
+        grid-column: span 6;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .cta-section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .cta-section__title {
+        font-size: 62px;
+        line-height: 80px;
+    }
+
+    .cta-section__description {
+        font-size: 10px;
+        line-height: 32px;
+    }
+
+    .cta-section__card--item:first-child {
+        grid-column: span 12;
+    }
+    .cta-section__card--item:last-child {
+        grid-column: span 12;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cta-section__title {
+        font-size: 49px;
+        line-height: 64px;
+    }
+
+    .cta-section__description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cta-section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .cta-section__title {
+        font-size: 31px;
+        line-height: 48px;
+    }
+
+    .cta-section__card--booking,
+    .cta-section__card--payment,
+    .cta-section__card--management {
+        grid-column: span 12;
+    }
 }
