@@ -116,11 +116,6 @@
 }
 
 @media screen and (max-width: 1439px) {
-    .cta-section {
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
-
     .cta-section-header svg {
         width: 32px;
         height: 32px;

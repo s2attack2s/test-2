@@ -809,6 +809,12 @@ ol > li {
         margin-left: 0;
     }
 
+    .menu-list .menu-item {
+        font-size: 25px;
+        line-height: 40px;
+        font-family: 'Nephilm';
+    }
+
     .button-mobile > div:first-child {
         height: 60px;
     }
