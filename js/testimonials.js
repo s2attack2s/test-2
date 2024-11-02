@@ -19,3 +19,13 @@ function duplicateTestimonials() {
 
 window.addEventListener('resize', duplicateTestimonials);
 window.addEventListener('load', duplicateTestimonials);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const emblaNode = document.querySelector('.embla');
+    const viewportNode = emblaNode.querySelector('.embla__viewport');
+    const emblaApi = EmblaCarousel(viewportNode, {
+        dragFree: true,
+        loop: true,
+        align: 'start',
+    });
+});

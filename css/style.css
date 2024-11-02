@@ -43,12 +43,12 @@
 
 @font-face {
     font-family: 'Nephilm';
-    src: url('/fonts/Nephilm.otf') format('opentype');
+    src: url('../fonts/Nephilm.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'General Sans Variable';
-    src: url('/fonts/GeneralSans-Variable.ttf') format('truetype');
+    src: url('../fonts/GeneralSans-Variable.ttf') format('truetype');
     font-weight: 400 900;
 }
 
@@ -492,6 +492,26 @@ header {
     position: fixed;
     height: 72px;
     transition: all 0.15s ease-in-out;
+}
+
+.menu-list .menu-item {
+    position: relative;
+    width: fit-content;
+}
+
+.menu-list .menu-item::after {
+    content: '';
+    position: absolute;
+    background-color: var(--neutral-1);
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -0px;
+    transition: all 0.15s ease-in-out;
+}
+
+.menu-list .menu-item:hover::after {
+    width: 100%;
 }
 
 .header-scroll-down {
