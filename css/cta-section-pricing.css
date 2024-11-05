@@ -1,198 +1,202 @@
 .cta-section {
-    background: var(--white);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 160px;
-    padding-bottom: 240px;
-    position: relative;
-    overflow: hidden;
+  overflow: hidden;
+  padding: 160px 24px 240px 24px;
+  background: #fafbf9;
+  color: var(--neutral-1);
+  position: relative;
+  background: #fff;
 }
 
-.cta-section__title {
-    text-align: center;
-    font-family: 'Nephilm';
-    font-size: 62px;
-    line-height: 80px;
+.cta-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-s);
 }
 
-.text-free {
-    font-size: 88px;
-    line-height: 104px;
+.cta-pricing-svg-1 {
+  position: absolute;
+  left: 145px;
+  bottom: -325px;
+  filter: blur(120px);
+  opacity: 0.5;
 }
-
-.cta-section__description {
-    font-size: 25px;
-    list-style: 40px;
-    text-align: center;
-    z-index: 1;
-}
-
-.cta-section a {
-    margin-top: var(--spacing-xs);
-    margin-bottom: 80px;
-}
-
-.cta-section-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 1;
-    gap: var(--spacing-m);
-}
-
-.pricing-svg {
-    position: absolute;
-    top: 19px;
-    left: -12px;
-}
-
-.cta-section .noise {
-    top: 0;
-}
-
-.cta-section__card {
-    width: 100%;
-}
-
-.cta-section__card--item:first-child {
-    grid-column: 2 / span 5;
-}
-
-.cta-section__card--item:last-child {
-    grid-column: 7 / span 5;
-}
-
-.cta-section__card--booking,
-.cta-section__card--payment,
-.cta-section__card--management {
-    grid-column: span 6;
-}
-
-.cta-section__card--header,
-.cta-section__card--header,
-.cta-section__card--header {
-    margin-bottom: 24px;
-}
-
-.header-booking {
-    margin-bottom: 48px;
-}
-
-.cta-section__card--bg {
-    background: var(--white);
-    box-shadow: 8px 24px 48px -12px rgba(0, 0, 0, 0.08);
-    border-radius: var(--corner-radius-s);
-}
-
-.cta-svg {
-    position: absolute;
-    opacity: 0.5;
-}
-
-.cta-svg-1 {
-    top: -210px;
-    left: 131px;
-}
-
-.cta-svg-2 {
-    top: -150px;
-    right: 199px;
+.cta--pricing-svg-2 {
+  position: absolute;
+  right: 145px;
+  bottom: -325px;
+  filter: blur(120px);
+  opacity: 0.5;
 }
 
 .cta-bg {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fff;
-    height: 920px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  height: 880px;
+  overflow: hidden;
+}
+
+.cta-svg-1 {
+  position: absolute;
+  left: 131px;
+  top: -210px;
+  filter: blur(120px);
+  opacity: 0.5;
+}
+.cta-svg-2 {
+  position: absolute;
+  right: -41px;
+  top: -150px;
+  filter: blur(120px);
+  opacity: 0.5;
+}
+
+.pricing-svg {
+  position: absolute;
+  top: 19px;
+  left: -12px;
+}
+
+.cta-section .noise {
+  top: 0;
+}
+
+.cta-section__card {
+  width: 100%;
+  margin-top: 96px;
+}
+
+.cta-section__card--bg {
+  border-radius: var(--corner-radius-s);
+  background: var(--white);
+  box-shadow: 8px 24px 48px -12px rgba(0, 0, 0, 0.08);
+}
+
+.cta-section__title {
+  font-size: 62px;
+  line-height: 80px;
+  font-family: "Nephilm", sans-serif;
+  text-align: center;
+}
+
+.cta-section__description {
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.cta-section__card--item {
+  grid-column: span 5;
+}
+
+.cta-section__card--payment,
+.cta-section__card--management {
+  grid-column: span 6;
+}
+
+.cta-section-bg-gradient__top {
+  height: 676px;
+  width: 1102px;
+  top: -66px;
+  left: -313px;
+}
+
+.cta-section-bg-gradient__bottom {
+  width: 720px;
+  height: 503px;
+  right: -380px;
+  bottom: -288px;
+}
+
+.cta-section__card--booking {
+  grid-column: span 6;
+}
+
+.cta-section__card--pc {
+  grid-column: span 1;
 }
 
 .cta-section-pricing {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-s);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-s);
+  margin-top: var(--spacing-xs);
 }
 
-@media screen and (max-width: 1919px) {
-    .cta-section__card--item:first-child {
-        grid-column: span 6;
-    }
-    .cta-section__card--item:last-child {
-        grid-column: span 6;
-    }
-    .cta-bg {
-        height: 880px;
-    }
+@media screen and (max-width: 1799px) {
+  .cta-section__card--pc {
+    display: none;
+  }
+
+  .cta-section {
+    padding: 96px 24px;
+  }
+
+  .cta-header svg:not(.pricing-svg) {
+    width: 32px;
+    height: 32px;
+  }
+
+  .cta-section__card--item {
+    grid-column: span 6;
+  }
 }
 
 @media screen and (max-width: 1439px) {
-    .cta-section__title {
-        font-size: 49px;
-        line-height: 64px;
-    }
-
-    .cta-section__description {
-        font-size: 10px;
-        line-height: 32px;
-    }
-
-    .cta-section__card--item:first-child {
-        grid-column: span 12;
-    }
-    .cta-section__card--item:last-child {
-        grid-column: span 12;
-    }
-    .text-free {
-        font-size: 62px;
-        line-height: 80px;
-    }
+  .cta-section__card--item {
+    grid-column: span 12;
+  }
+  .cta-section__description {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
-    .cta-section__title {
-        font-size: 49px;
-        line-height: 64px;
-    }
+  .cta-section-bg-gradient__top {
+    display: block;
+  }
 
-    .cta-section__description {
-        font-size: 16px;
-        line-height: 24px;
-    }
+  .cta-section__title {
+    font-size: 49px;
+    line-height: 64px;
+  }
+
+  .cta-section__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .cta-section {
-        padding-top: 148px;
-        padding-bottom: 112px;
-    }
+  .cta-section {
+    padding: 48px 24px;
+  }
 
-    .cta-section-header {
-        flex-direction: column;
-        align-items: center;
-        gap: var(--spacing-m);
-    }
+  .cta-section__card {
+    margin-top: 96px;
+  }
 
-    .cta-section__title {
-        font-size: 31px;
-        line-height: 48px;
-    }
+  .cta-section__card,
+  .cta-section__card .container {
+    gap: var(--spacing-s);
+  }
 
-    .cta-section__card--booking,
-    .cta-section__card--payment,
-    .cta-section__card--management {
-        grid-column: span 12;
-    }
+  .cta-section__title {
+    font-size: 31px;
+    line-height: 48px;
+  }
 
-    .cta-section-pricing {
-        flex-direction: column;
-        gap: 0;
-    }
+  .cta-section__card--payment,
+  .cta-section__card--management,
+  .cta-section__card--booking {
+    grid-column: span 12;
+  }
+  .cta-section-pricing {
+    flex-direction: column;
+  }
 }

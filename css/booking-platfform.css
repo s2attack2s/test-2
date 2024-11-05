@@ -1,61 +1,61 @@
 .booking-platform {
-    padding-top: 160px;
-    padding-bottom: var(--spacing-2xl);
+  padding-top: 160px;
+  padding-bottom: var(--spacing-2xl);
 }
 
 .booking-platform .text--aside {
-    margin-top: var(--spacing-4xs);
+  margin-top: var(--spacing-4xs);
 }
 
 .booking-platform__title {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0;
 }
 
 .booking-platform__description {
-    margin-bottom: var(--spacing-l);
-    font-size: 20px;
-    line-height: 32px;
-    margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-l);
+  font-size: 20px;
+  line-height: 32px;
+  margin-top: var(--spacing-xs);
 }
 
 @media screen and (min-width: 1800px) {
-    .booking-platform__title {
-        flex-direction: row;
-        gap: 14px;
-    }
+  .booking-platform__title {
+    flex-direction: row;
+    gap: 14px;
+  }
 }
 
 @media screen and (max-width: 1439px) {
-    .booking-platform {
-        padding-bottom: var(--spacing-2xl);
-    }
-    .booking-platform .text--aside {
-        margin-top: 0;
-    }
+  .booking-platform {
+    padding-bottom: var(--spacing-2xl);
+  }
+  .booking-platform .text--aside {
+    margin-top: 0;
+  }
 
-    .booking-platform__description {
-        margin-bottom: var(--spacing-m);
-    }
+  .booking-platform__description {
+    margin-bottom: var(--spacing-m);
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .booking-platform {
-        padding-top: 112px;
-        padding-bottom: var(--spacing-xl);
-    }
+  .booking-platform {
+    padding-top: 112px;
+    padding-bottom: var(--spacing-xl);
+  }
 
-    .booking-platform .niceshoots__aside {
-        font-size: 14px;
-        line-height: 20px;
-    }
+  .booking-platform .container__aside {
+    font-size: 14px;
+    line-height: 20px;
+  }
 
-    .booking-platform__description {
-        font-size: 16px;
-        line-height: 24px;
-        margin-top: var(--spacing-2xs);
-        margin-bottom: var(--spacing-m);
-    }
+  .booking-platform__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: var(--spacing-2xs);
+    margin-bottom: var(--spacing-m);
+  }
 }
