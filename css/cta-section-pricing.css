@@ -107,7 +107,7 @@
     top: 0;
     left: 0;
     background: #fff;
-    height: 920px;
+    height: 897px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -183,6 +183,14 @@
     .cta-section__title {
         font-size: 31px;
         line-height: 48px;
+    }
+
+    .cta-section__card {
+        gap: var(--spacing-s);
+    }
+
+    .cta-section__card--item .niceshoots {
+        gap: var(--spacing-s);
     }
 
     .cta-section__card--booking,

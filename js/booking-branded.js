@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const animationHeader = () => {
         const header = document.querySelector('header');
+        let buttonLogin = document.querySelector('.header-action-login');
+        let buttonSign = document.querySelector('.header-action-sign');
         let scrollPosition = 0;
         if (Array.isArray(osInstances)) {
             osInstances.forEach(instance => {
@@ -36,6 +38,15 @@ document.addEventListener('DOMContentLoaded', function () {
             header.classList.add('header-scroll-up');
             header.classList.remove('header-scroll-down');
         }
+
+        if (scrollPosition > 0) {
+            buttonLogin.style.display = 'none';
+            buttonSign.style.display = 'block';
+        } else {
+            buttonLogin.style.display = 'block';
+            buttonSign.style.display = 'none';
+        }
+
         lastScrollTop = scrollPosition <= 0 ? 0 : scrollPosition;
     };
 

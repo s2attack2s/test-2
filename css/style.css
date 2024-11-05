@@ -897,6 +897,13 @@ ol > li {
         line-height: 20px !important;
     }
 
+    .sign-button,
+    .login-button {
+        font-size: 16px;
+        line-height: 24px !important;
+        padding: var(--spacing-2xs) var(--spacing-s) !important;
+    }
+
     #menu:checked ~ .button-mobile {
         padding-top: 12px;
     }
@@ -924,6 +931,10 @@ ol > li {
     }
 
     .mobile-none {
+        display: none;
+    }
+
+    .header-action-sign {
         display: none;
     }
 
