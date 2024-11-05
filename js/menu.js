@@ -18,3 +18,9 @@ $('.menu-collapse-mobile').click(function () {
             e.stopPropagation();
         });
 });
+$('.menu-toggle').click(function () {
+    $('.menu-collapse-mobile .menu-collapse-title').removeClass('d-block');
+    $('.menu-collapse-mobile .menu-collapse-title').next().slideUp();
+    $('.menu-collapse-mobile .icon-plus').css('display', 'block');
+    $('.menu-collapse-mobile .icon-minus').css('display', 'none');
+});
