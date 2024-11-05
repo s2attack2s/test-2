@@ -46,6 +46,16 @@
     grid-column: span 6;
 }
 
+.cta-section__card--header,
+.cta-section__card--header,
+.cta-section__card--header {
+    margin-bottom: 24px;
+}
+
+.header-booking {
+    margin-bottom: 48px;
+}
+
 .cta-section__card--bg {
     background: var(--white);
     box-shadow: 8px 24px 48px -12px rgba(0, 0, 0, 0.08);

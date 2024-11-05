@@ -1,6 +1,7 @@
 :root {
     --accent-4: #000;
     --white: #fff;
+    --white-80: rgba(255, 255, 255, 0.8);
     --black: #000;
     --bg-1: #fafbf9;
     --bg-2: #ebe8e0;
@@ -90,6 +91,7 @@ pre {
 a {
     text-decoration: none;
     color: var(--neutral-1);
+    display: inline;
 }
 
 .h-100 {
@@ -358,6 +360,11 @@ a {
     line-height: 80px;
 }
 
+.fs-88 {
+    font-size: 88px;
+    line-height: 104px;
+}
+
 .mw-xl {
     min-width: 64px;
 }
@@ -494,12 +501,48 @@ header {
     transition: all 0.15s ease-in-out;
 }
 
-.menu-list .menu-item {
+.menu-dropdown:hover .menu-dropdown-body {
+    display: block;
+}
+
+.menu-dropdown:hover .menu-item:after {
+    width: 100%;
+}
+
+.menu-dropdown-body {
+    display: none;
+    position: absolute;
+}
+
+.menu-dropdown-content {
+    width: 400px;
+    margin-top: 20px;
+    padding: var(--spacing-3xs);
+    background: var(--white);
+    box-shadow: 8px 24px 48px -12px rgba(0, 0, 0, 0.08);
+    border-radius: var(--corner-radius-s);
+    position: relative;
+    transform: translateX(calc(-50% + 45px));
+}
+.menu-dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: var(--spacing-xs);
+    cursor: pointer;
+}
+
+.menu-dropdown-item:hover {
+    box-shadow: 8px 24px 48px -12px rgba(0, 0, 0, 0.08);
+}
+
+.menu-item {
     position: relative;
     width: fit-content;
 }
 
-.menu-list .menu-item::after {
+.menu-item::after {
     content: '';
     position: absolute;
     background-color: var(--neutral-1);
@@ -510,13 +553,33 @@ header {
     transition: all 0.15s ease-in-out;
 }
 
-.menu-list .menu-item:hover::after {
+.menu-item:hover {
+    color: var(--neutral-1);
+}
+
+.menu-item:hover::after {
     width: 100%;
 }
 
-.header-scroll-down {
-    height: 0;
-    overflow: hidden;
+.menu-collapse-title {
+    font-size: 25px;
+    list-style: 40px;
+    font-family: 'Nephilm';
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3xs);
+}
+
+.menu-collapse-body {
+    margin-top: var(--spacing-2xs);
+}
+
+.menu-collapse-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-xs) 0;
+    gap: 8px;
 }
 
 .menu-mobile {
@@ -526,12 +589,19 @@ header {
     display: none;
 }
 
+.header-scroll-down {
+    height: 0;
+    overflow: hidden;
+}
+
 .button-mobile {
     position: absolute;
     top: 0;
     width: 100%;
     background: white;
     display: none;
+    max-height: 100vh;
+    overflow: auto;
 }
 
 .button-mobile > div:first-child {
@@ -642,10 +712,6 @@ footer a {
     color: var(--neutral-1);
 }
 
-.footer-email {
-    text-decoration: underline;
-}
-
 .footer-email,
 .footer-social-link {
     font-size: 25px;
@@ -680,6 +746,10 @@ ol > li {
     overflow: hidden;
     position: relative;
     gap: 24px;
+}
+
+.privacy-term-content {
+    padding-bottom: var(--spacing-5xl);
 }
 
 .privacy-term-svg {
@@ -731,7 +801,7 @@ ol > li {
     #menu:checked ~ .button-mobile {
         z-index: 3;
         padding: var(--spacing-s);
-        padding-top: var(--spacing-xs);
+        padding-top: 18px;
         display: block;
         left: -0;
         position: fixed;
@@ -753,6 +823,12 @@ ol > li {
         height: 24px;
         display: block;
         cursor: pointer; /* Thêm hiệu ứng con trỏ cho label */
+    }
+
+    .menu-list .menu-item {
+        font-size: 25px;
+        line-height: 40px;
+        font-family: 'Nephilm';
     }
 
     .tablet-none {
@@ -794,6 +870,10 @@ ol > li {
     .term {
         margin-top: var(--spacing-3xl);
     }
+
+    .privacy-term-content {
+        padding-bottom: var(--spacing-4xl);
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -801,18 +881,17 @@ ol > li {
         height: 60px;
     }
     header button {
-        padding: var(--spacing-3xs) var(--spacing-xs);
+        padding: var(--spacing-3xs) var(--spacing-xs) !important;
         font-size: 14px;
         line-height: 20px !important;
     }
-    .menu-mobile {
-        margin-left: 0;
+
+    #menu:checked ~ .button-mobile {
+        padding-top: 12px;
     }
 
-    .menu-list .menu-item {
-        font-size: 25px;
-        line-height: 40px;
-        font-family: 'Nephilm';
+    .menu-mobile {
+        margin-left: 0;
     }
 
     .button-mobile > div:first-child {

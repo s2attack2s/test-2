@@ -11,16 +11,15 @@ $('.collapse-item').click(function () {
         viewMore.show();
     }
 
-    let elPlus = el.find('.icon-plus');
-    let elMinus = el.find('.icon-minus');
+    let elPlus = $(this).find('.icon-plus');
+    let elMinus = $(this).find('.icon-minus');
 
-    if (elPlus.is(':visible')) {
-        elPlus.hide();
-        elMinus.show();
-    } else if (elMinus.is(':visible')) {
-        elMinus.hide();
-        elPlus.show();
-    }
+    let currentDisplay = elPlus.css('display');
+    elPlus.css('display', elMinus.css('display'));
+    elMinus.css('display', currentDisplay);
+
+    $('.collapse-item').not(this).find('.icon-plus').css('display', 'block');
+    $('.collapse-item').not(this).find('.icon-minus').css('display', 'none');
 
     el.not(this).find('.view-less').hide();
     el.not(this).find('.view-more').show();

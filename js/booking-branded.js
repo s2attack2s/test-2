@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const aside = document.querySelectorAll('.booking-branded__content');
 
     const checkPosition = () => {
+        if (!aside) return;
         aside.forEach(image => {
             const rect = image.getBoundingClientRect();
             let attr = image.getAttribute('data-value');
@@ -63,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function setElementHeight() {
     const element = document.getElementById('booking-benefits__img');
+    if (!element) return;
     const aspectRatio = window.innerWidth < 768 ? 0.67 : 1.55;
 
     const width = element.offsetWidth;
