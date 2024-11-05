@@ -39,14 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
             header.classList.remove('header-scroll-down');
         }
 
-        if (scrollPosition > 0) {
-            buttonLogin.style.display = 'none';
-            buttonSign.style.display = 'block';
-        } else {
-            buttonLogin.style.display = 'block';
-            buttonSign.style.display = 'none';
-        }
-
         lastScrollTop = scrollPosition <= 0 ? 0 : scrollPosition;
     };
 

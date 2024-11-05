@@ -515,11 +515,11 @@ header {
 }
 
 .menu-dropdown-content {
-    width: 400px;
+    width: 320px;
     margin-top: 20px;
     padding: var(--spacing-3xs);
     background: var(--white);
-    box-shadow: 8px 24px 48px -12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 8px 48px -8px rgba(0, 0, 0, 0.16);
     border-radius: var(--corner-radius-s);
     position: relative;
     transform: translateX(calc(-50% + 45px));
@@ -531,10 +531,12 @@ header {
     gap: 8px;
     padding: var(--spacing-xs);
     cursor: pointer;
+    font-weight: 500;
 }
 
 .menu-dropdown-item:hover {
-    box-shadow: 8px 24px 48px -12px rgba(0, 0, 0, 0.08);
+    background: #f8f8f8;
+    border-radius: var(--corner-radius-2xs);
 }
 
 .menu-item {
@@ -799,7 +801,14 @@ ol > li {
         grid-column: span 12;
     }
 }
-
+@media screen and (min-width: 1024px) {
+    .header-action-sign {
+        display: inline !important;
+    }
+    .header-action-login {
+        display: inline !important;
+    }
+}
 @media screen and (max-width: 1023px) {
     header .niceshoots__content {
         justify-content: end;
@@ -807,6 +816,10 @@ ol > li {
 
     .menu-mobile {
         display: block;
+    }
+
+    .header-action-sign {
+        display: none;
     }
 
     #menu:checked ~ .button-mobile {
@@ -961,6 +974,11 @@ ol > li {
     .footer-info-section,
     .footer-logo-section {
         max-width: calc(100vw - 48px);
+    }
+
+    .footer-title {
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .privacy-term-header {

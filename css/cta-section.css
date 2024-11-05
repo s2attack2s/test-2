@@ -139,6 +139,14 @@
         padding-bottom: 48px;
     }
 
+    .cta-section__card {
+        gap: var(--spacing-s);
+    }
+
+    .cta-section__card--item .niceshoots {
+        gap: var(--spacing-s);
+    }
+
     .cta-section-header {
         flex-direction: column;
         align-items: center;
